@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+#game-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+#game-container * {
+    color: #333 !important;
+}
+
+#category-buttons button {
+    color: white !important;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#info-display {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#category-selection, #question-container, #summary-container {
+    margin-bottom: 25px;
+    display: none;
+}
+
+#category-selection {
+    display: block;
+}
+
+#category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#category-buttons button, #answers button {
+    padding: 12px 25px;
+    margin: 8px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+#category-buttons button:hover, #answers button:hover {
+    background-color: #0056b3;
+}
+
+.question {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#answers {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#answers button.correct {
+    background-color: #a5d6a7;
+    color: #2e7d32;
+}
+
+#answers button.wrong {
+    background-color: #ef9a9a;
+    color: #d32f2f;
+}
+
+#answers button {
+    color: white !important;
+}
+
+#next-round {
+    text-align: center;
+    margin-top: 30px;
+    display: none;
+}
+
+#next-round button {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next-round button:hover {
+    background-color: #218838;
+}
+
+#question-content {
+    text-align: center;
+}
+
+#timer-config input[type="number"] {
+    width: 50px;
+}
+
+#summary-text {
+    text-align: center;
+}
+
+#timer-config {
+    display: flex;
+    justify-content: center; /* Center the timer config */
+    margin-bottom: 10px; /* Add some space below */
+}

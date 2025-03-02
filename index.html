@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Trivia Game</h1>
+        <div id="info-display">
+            <p>Round: <span id="current-round">1</span></p>
+            <p>Question: <span id="current-question">0</span> / 5</p>
+            <p>Correct Answers: <span id="correct-count">0</span></p>
+            <p>Time: <span id="timer">10</span></p>
+        </div>
+        <div id="category-selection">
+            <h2>Select Category</h2>
+            <div id="timer-config">
+                <label for="timer-input">Set Timer (seconds):</label>
+                <input type="number" id="timer-input" value="10" min="1">
+            </div>
+            <div id="category-buttons">
+                <button data-category="9">General Knowledge</button>
+                <button data-category="12">Music</button>
+                <button data-category="15">Video Games</button>
+                <button data-category="18">Computers</button>
+                <button data-category="21">Sports</button>
+            </div>
+        </div>
+        <div id="question-container">
+            <h2 id="question-title"></h2>
+            <div id="question-content"></div>
+            <div id="answers"></div>
+        </div>
+        <div id="next-round">
+            <button id="next-round-button">Next Round</button>
+        </div>
+        <div id="summary-container">
+            <h2>Game Summary</h2>
+            <p id="summary-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
